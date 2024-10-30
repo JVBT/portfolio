@@ -43,7 +43,10 @@ nav::before {
     nav::before {
         content: "";
     }
-    
+
+    .na {
+        font-size: 2vw;
+    }
 }
 
 .na {
@@ -225,7 +228,7 @@ nav::before {
 form input[type="text"] {
     background-color: #b3b3b3;
     width: 90vw;
-    height: 5vh;
+    height: 50px;
     margin-bottom: 10px;
     padding: 0 20px 0 20px;
     border: 2px solid #000;
@@ -246,4 +249,66 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #000;
     color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    /* Styles for mobile phones */
+
+    /* Adjusting navigation styles */
+    nav {
+        font-size: 12px;
+    }
+
+    nav::before {
+        content: "";
+    }
+
+    .na {
+        font-size: 3vw;
+        padding: 10px 2vw 10px 2vw;
+    }
+
+    /* Adjusting my photo styles */
+    .myf {
+        width: 80vw;
+        height: auto;
+    }
+
+    /* Adjusting skills styles */
+    #skills {
+        width: 100%;
+    }
+
+    .skl {
+        font-size: 18px;
+    }
+
+    /* Adjusting pricing container styles */
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        width: 40vw;
+    }
+
+    /* Adjusting contact form styles */
+    form input[type="text"] {
+        width: 95vw;
+    }
+
+    form input[type="submit"] {
+        width: 40vw;
+    }
 }
