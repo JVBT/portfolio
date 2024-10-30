@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:linear-gradient(to top left, #0f0f0f, #575656, #0f0f0f);
+    background-attachment:fixed;
+    background-size: 100% 100%;
+}
+
+#name {
+    color: white;
+    font-size: 5vh;
+}
+
+nav {
+    background: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+nav::before {
+    content: "John Vergel Tenorio";
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    margin-right: 1vw;
+    
+}
+
+@media  (max-width: 1005px) {
+    nav::before {
+        content: "";
+    }
+    
+}
+
+.na {
+    color: white;
+    text-decoration: none;
+    padding: 15px 5vw 15px 5vw;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.na:hover {
+    background-color: #20ff03;
+    transition: 0.5s;
+    color: black;
+}
+.myf {
+    width: 30pc;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 10px 30px 60px;
+    box-shadow: 20px 20px 20px black;
+}
+.mp {
+    text-align: center;
+}
+#skills {
+    background-color: rgba(0, 0, 0, 0.329);
+    border: 2px solid #000;
+    height: auto;
+    width: 90%;
+    text-align: left;
+    display: inline-block;
+    box-shadow: 7px 7px 20px black;
+}
+#skills div {
+    height: 10px;
+    float: left;
+}
+.skl {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 22px;
+}
+.lbb {
+    background-color: #000;
+    margin-left: 20px;
+}
+.lbw {
+    background-color: #fff;
+}
+.mp h1 {
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dt {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 160%;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 20px;
+}
+
+.plan {
+    background-color: #333;
+    color: white;
+    width: 30vw;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.header {
+    background-color: #444;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+.plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.plan:hover, .project:hover{
+    scale: 1.1;
+    box-shadow: 10px 10px 20px black;
+    transition: 0.8s;
+}
+
+.plan ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.price {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.price span {
+    font-size: 14px;
+    color: lightgray;
+}
+
+.plan button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plan button:hover {
+    background-color: #777;
+}
+
+.project {
+    background-color: #333;
+    color: white;
+    width: 29vw;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    float: left;
+    margin: 10px;
+}
+
+.project button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project button:hover {
+    background-color: #777;
+}
+
+.project img {
+    width: 13vw;
+    height: auto;
+    border-radius: 8px;
+}
+
+#contact h1{
+    text-align: left;
+    border-bottom: 2px solid #fff;
+    width: 200px;
+    margin: 20px 0 2vh 5vw;
+}
+
+#contact p {
+    text-align: left;
+    margin: 20px 0 2vh 5vw;
+    color: #fff;
+    font-size: 20px;
+}
+
+.cta {
+    color: white;
+    font-size: 20px;
+}
+
+form input[type="text"] {
+    background-color: #b3b3b3;
+    width: 90vw;
+    height: 5vh;
+    margin-bottom: 10px;
+    padding: 0 20px 0 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #000, 5px 5px 10px black;
+    background-image: linear-gradient(to bottom right, white, transparent);
+}
+
+form input[type="submit"] {
+    width: 20vw;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px 5px rgb(0, 0, 0), 5px 5px 10px black;
+    background-image: linear-gradient(to bottom right, transparent, white);
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #000;
+    color: #fff;
+}
