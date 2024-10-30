@@ -43,10 +43,6 @@ nav::before {
     nav::before {
         content: "";
     }
-
-    .na {
-        font-size: 2vw;
-    }
 }
 
 .na {
